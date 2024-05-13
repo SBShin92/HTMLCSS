@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Display 실습</title>
+</head>
+
+<body>
+    <h1>CSS Display 실습</h1>
+    <div class="block-display">Block Display</div>
+    <span class="inline-display">Inline Display</span>
+    <span>Another Inline Element</span>
+    <div class="inline-block-display">Inline-Block Display</div>
+    <div class="none-display">None Display</div>
+
+    <h3>inline-block의 특징</h3>
+    <ul>
+        <li><b>inline</b>과 <b>block</b>의 특징을 모두 가짐</li>
+        <li><b>inline</b> 요소들처럼 현재 라인에 이어서 표시됨</li>
+        <li><b>block</b> 요소들처럼 width, height, margin, padding을 설정할 수 있음</li>
+        <li>내부 콘텐츠의 크기에 따라 크기가 자동 조절됨. 블록 요소와 달리 전체 너비를 차지하지 않으며 필요한 만큼의 공간만 사용함</li>
+        <li>수직 방향으로 정렬될 수 있음. <b>inline-block</b>요소가 한줄에 배치되면 <b>vertical-align</b> 속성을 사용하여 상대적으로 정렬할 수 있음</b></li>
+    </ul>
+
+    <h3>visibility vs display: none</h3>
+    <div>
+        <img class="hidden" src="../images/penguins.jpg">
+        <img class="none" src="../images/penguins.jpg">
+        <img class="normal" src="../images/penguins.jpg">
+
+    </div>
+</body>
+
+</html>

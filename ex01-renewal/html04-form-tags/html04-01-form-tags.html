@@ -1,16 +1,98 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>가입 폼 실습</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <h1>회원 가입 폼</h1>
 
     <!-- 가상의 멤버십 서비스를 가정하고 가입 폼을 만들어 봅시다 -->
+    <form action="#" method="POST">
+      <fieldset>
+        <legend>회원정보</legend>
+        <label for="userId">유저이름</label>
+        <input
+          type="text"
+          name="userId"
+          id="userId"
+          placeholder="input id"
+          required
+        />
+        <br />
+        <label for="userPass">패스워드</label>
+        <input
+          type="password"
+          name="userPass"
+          id="userPass"
+          placeholder="input password"
+          required
+        />
+        <br />
+        <label for="userPassConfirm">패스워드 확인</label>
+        <input
+          type="password"
+          name="userPassConfirm"
+          id="userPassConfirm"
+          placeholder="input password"
+          required
+        />
+        <br />
+        <label for="email">이 - 메일</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="yourEmail@example.com"
+        />
+        <br />
+        <label>성별</label>
+        <label for="male"></label>
+        <input type="radio" name="gender" id="male" />남
+        <input type="radio" name="gender" id="female" />여
+        <br />
+        <label>취향?</label>
+        <br />
+        <label for="coke">콜라</label>
+        <input type="checkbox" name="coke" id="coke" />
+        <label for="americano">아메리카노</label>
+        <input type="checkbox" name="americano" id="americano" />
+        <label for="latte">라떼</label>
+        <input type="checkbox" name="latte" id="latte" />
+        <br />
+        <select name="telecom" id="telecom">
+          <option value="SKT">SKT</option>
+          <option value="KT">KT</option>
+          <option value="LG">LG</option>
+          <option value="ETC">알뜰폰</option>
+        </select>
+        <br />
 
-</body>
+        <textarea
+          name="userDesc"
+          id="userDesc"
+          cols="50"
+          rows="10"
+          placeholder="간단한 자기소개"
+        ></textarea>
+        <br />
 
+        <input type="checkbox" name="terms" id="terms" required />
+        <label for="terms">이용 약관에 동의합니다.</label>
+        <br />
+        
+        <input type="submit" value="제출" />
+        <br />
+        <input type="reset" value="다시작성" />
+        <br />
+      </fieldset>
+    </form>
+  </body>
 </html>
+
+<script>
+  function helloWorld(name) {
+    console.log("hello world!!");
+    console.log(document.getElementById("userId"));
+  }
+</script>

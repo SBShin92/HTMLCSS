@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>CSS 자식 선택자와 후손 선택자 실습</title>
-</head>
+    <style>
+      .parent {
+        background-color: antiquewhite;
+      }
+      .parent p {
+        color: aqua;
+      }
+      .parent > p {
+        color: blueviolet;
+      }
+    </style>
+  </head>
 
-<body>
+  <body>
     <h1>CSS 자식 선택자와 후손 선택자 실습</h1>
 
     <div class="parent">
-        <p>이것은 자식 문단입니다.</p>
-        <div class="child">
-            <p>이것은 후손 문단입니다.</p>
-        </div>
+      <p>이것은 자식 문단입니다.</p>
+      <div class="child">
+        <p>이것은 후손 문단입니다.</p>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>

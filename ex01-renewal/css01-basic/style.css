@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+* {
+    background-color: rgb(30, 30, 30);
+}
+
+h1 {
+  color: greenyellow;
+  background-color: gray;
+  font-family: "Courier New", Courier, monospace;
+}
+
+p {
+  color: palevioletred;
+}
+

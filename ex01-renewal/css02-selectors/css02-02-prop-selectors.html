@@ -3,6 +3,27 @@
 
 <head>
     <title>CSS 속성 선택자 실습</title>
+    <style>
+        a[href] {
+            color: peru;
+        }
+        a[href^="http://"] {
+            color: red;
+        }
+        a[href^="/"] {
+            color: blue;
+        }
+        input[type="text"] {
+            border: 3px dotted green;
+        }
+        input[type="button"] {
+            border: none;
+            background-color: blueviolet;
+            color: antiquewhite;
+            font-weight: bold;
+        }
+        
+    </style>
 </head>
 
 <body>

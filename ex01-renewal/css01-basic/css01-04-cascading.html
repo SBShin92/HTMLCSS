@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>What does Cascading means?</title>
-</head>
+    <!-- !important > inline > internal > external > ... > Browser Default -->
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      p {
+        background-color: aqua;
+      }
+    </style>
+  </head>
 
-<body>
+  <body>
     <h1>Hello, External CSS!</h1>
-    <p>This paragraph is styled with external CSS.</p>
-</body>
-
+    <p>This paragraph is styled with internal CSS.</p>
+    <p style="background-color: darkcyan">
+      This paragraph is styled with inline CSS.
+    </p>
+  </body>
 </html>

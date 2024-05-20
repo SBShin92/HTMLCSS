@@ -1,21 +1,44 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>CSS 색상</title>
+    <style>
+      body {
+        background: gray;
+      }
+      div {
+        margin: 10px;
+        padding: 10px;
+        color: white;
+        border: 1px dotted darkblue;
+      }
+      .keyword-color {
+        color: aquamarine;
+      }
+      .hex-color {
+        color: #634234;
+      }
+      .rgb-color {
+        color: rgb(60, 72, 84);
+      }
+      .rgba-color {
+        color: rgb(60, 72, 84, 0.2);
+      }
+      .hsl-color {
+        color: hsl(39, 100%, 50%);
+      }
+      .hsla-color {
+        color: hsla(50, 80%, 40%, 0.5);
+      }
+    </style>
+  </head>
 
-<head>
-    <title>CSS 색상 실습</title>
-</head>
-
-<body>
-
-    <h1>CSS 색상 실습</h1>
-
+  <body>
     <div class="keyword-color">키워드 색상</div>
     <div class="hex-color">HEX 색상</div>
     <div class="rgb-color">RGB 색상</div>
     <div class="rgba-color">RGBA 색상</div>
     <div class="hsl-color">HSL 색상</div>
     <div class="hsla-color">HSLA 색상</div>
-
-</body>
-
+  </body>
 </html>

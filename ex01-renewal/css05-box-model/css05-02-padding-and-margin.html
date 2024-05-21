@@ -3,6 +3,44 @@
 
 <head>
     <title>CSS Box Model 실습</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        div.padding-box {
+            display: flex;
+            width: 200px;
+            height: 200px;
+            justify-content: center;
+            align-items: center;
+            background: pink;
+            border: 1px solid #000;
+        }
+        div.margin-box {
+            display: flex;
+            width: 200px;
+            height: 200px;
+            justify-content: center;
+            align-items: center;
+            background: blueviolet;
+        }
+        div.bottom-box {
+            display: flex;
+            width: 200px;
+            height: 200px;
+            justify-content: center;
+            align-items: center;
+            background: firebrick;
+        }
+        div.padding-box {
+            padding: 10px;
+        }
+        div.margin-box {
+            margin: 20px;
+            border: 2px dotted #000;
+        }
+    </style>
 </head>
 
 <body>

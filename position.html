@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position test</title>
+    <style>
+        .container {
+            position: relative;
+            border: 2px solid #000;
+            height: 150px;
+            overflow: scroll;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background: red;
+            border: 1px solid #000;
+            position: absolute;
+        }
+        .box:first-child {
+        }
+        .box:nth-child(2) {
+            left: 50px;
+            top: 50px;
+            background: blue;
+        }
+        .box:nth-child(3) {
+            left: 100px;
+            top: 100px;
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

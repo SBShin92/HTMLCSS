@@ -4,6 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <title>CSS float 연습</title>
+    <style>
+        .menu {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            background: lightcoral;
+            overflow: hidden;
+        }
+        .menu > li {
+            float: left;
+            padding: 10px;
+            text-align: center;
+            background: lightgreen;
+            border: 1px solid #000;
+        }
+    </style>
 </head>
 
 <body>
@@ -19,6 +35,18 @@
     </ul>
 
     <h3>float를 이용한 기사 예제</h3>
+
+    <style>
+        .news-article {
+            border: 2px solid #000;
+            overflow: hidden;
+        }
+        .news-article > img {
+            float: left;
+            width: 150px;
+            margin-right: 20px;
+        }
+    </style>
     <!-- 기사 예제 -->
     <div class="news-article">
         <!-- 이미지가 들어갈 자리 -->

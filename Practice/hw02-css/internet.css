@@ -1,0 +1,62 @@
+* {
+    font-family: "맑은고딕", "Malgun Gothic", sans-serif;
+}
+h2 {
+    font-size: 25px;
+}
+h3 {
+    font-size: 20px;
+}
+h1 {
+    font-family: "궁서", serif;
+    font-size: 30px;
+    letter-spacing: 15px;
+}
+div.chapter-02 {
+    background: #d9d9d9;
+}
+div.chapter-02 > p {
+    text-indent: 30px;
+}
+div.chapter-02 > .chapter-02-01-title {
+    text-decoration: underline;
+    color: #00ff00;
+}
+div.chapter-02 > .chapter-02-03-title {
+    text-decoration: underline;
+}
+ul {
+    list-style-type: square;
+}
+ol {
+    list-style-type: none;
+}
+tbody > tr:hover {
+    background: #edd3ed;
+}
+thead > tr {
+    background: #c8ebfa;
+}
+tbody > tr > td + td {
+    text-align: right;
+}
+tbody > tr > td + td:before {
+    content: "약 ";
+}
+tbody > tr > td + td:after {
+    content: " (MB/초)";
+}
+tbody a:link {
+    color: #ffffff;
+}
+tbody a:visited {
+    color: #ffffff;
+}
+tbody a:hover {
+    color: #0000ff;
+    text-decoration: underline;
+}
+tbody a:active {
+    color: #0000ff;
+    text-decoration: underline;
+}

@@ -6,6 +6,12 @@
     <title>idx</title>
 </head>
 <body>
+  <h1>Favorite Page</h1>
+  <a href="Practice/hw01-html/ex01.html">hw01-html</a>
+  <a href="Practice/resume/resume.html">resume</a>
+  <a href="Practice/hw02-css/internet.html">internet</a>
+  <a href="ex01-renewal/html04-form-tags/html04-01-form-tags.html">form tag</a>
+  <h2>Index</h2>
     <script>
         async function fetchFiles(path) {
             const response = await fetch(`https://api.github.com/repos/SBShin92/HTMLCSS/contents/${path}`);
@@ -24,7 +30,7 @@
 
         (async () => {
             const htmlString = await fetchFiles('');
-            document.getElementsByTagName('body')[0].innerHTML = `<ul>${htmlString}</ul>`;
+            document.getElementsByTagName('body')[0].innerHTML += `<ul>${htmlString}</ul>`;
         })()
     </script>
 </body>

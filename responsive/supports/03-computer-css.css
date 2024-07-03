@@ -1,0 +1,22 @@
+/* 대형 스크린용 - 1024px 이상 */
+header {
+  height: 500px;
+}
+
+.content .text {
+  font-size: 1.5em;
+}
+
+#intro,
+#section1 {
+  float: none;
+  width: 100%;
+}
+
+section:nth-child(2n) img {
+  float: left;
+}
+
+section:nth-child(2n + 1) img {
+  float: right;
+}

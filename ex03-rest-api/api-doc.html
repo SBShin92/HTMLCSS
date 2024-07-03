@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TODOs API Documentation</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+        <div class="container mt-5">
+                <h1 class="mb-4">TODOs API Documentation</h1>
+
+                <div class="card mb-3">
+                        <div class="card-header">
+                                <h2>GET /api/todos</h2>
+                        </div>
+                        <div class="card-body">
+                                <p>Retrieve all TODO items.</p>
+                                <h5>Response:</h5>
+                                <pre>
+[
+    {
+        "id": 1,
+        "title": "Example TODO",
+        "completed": false
+    },
+    ...
+]
+                </pre>
+                        </div>
+                </div>
+
+                <div class="card mb-3">
+                        <div class="card-header">
+                                <h2>GET /api/todos/{id}</h2>
+                        </div>
+                        <div class="card-body">
+                                <p>Retrieve a specific TODO item by ID.</p>
+                                <h5>Response:</h5>
+                                <pre>
+{
+    "id": 1,
+    "title": "Example TODO",
+    "completed": false
+}
+                </pre>
+                        </div>
+                </div>
+
+                <div class="card mb-3">
+                        <div class="card-header">
+                                <h2>GET /api/todos/search</h2>
+                        </div>
+                        <div class="card-body">
+                                <p>Search TODO items by keyword in title.</p>
+                                <h5>Request Parameters:</h5>
+                                <pre>
+?keyword=example
+                </pre>
+                                <h5>Response:</h5>
+                                <pre>
+[
+    {
+        "id": 1,
+        "title": "Example TODO",
+        "completed": false
+    },
+    ...
+]
+                </pre>
+                        </div>
+                </div>
+
+                <div class="card mb-3">
+                        <div class="card-header">
+                                <h2>POST /api/todos</h2>
+                        </div>
+                        <div class="card-body">
+                                <p>Create a new TODO item.</p>
+                                <h5>Request Body:</h5>
+                                <pre>
+{
+    "title": "New TODO",
+    "completed": false
+}
+                </pre>
+                                <h5>Response:</h5>
+                                <pre>
+{
+    "id": 1,
+    "title": "New TODO",
+    "completed": false
+}
+                </pre>
+                        </div>
+                </div>
+
+                <div class="card mb-3">
+                        <div class="card-header">
+                                <h2>PUT /api/todos/{id}</h2>
+                        </div>
+                        <div class="card-body">
+                                <p>Update an existing TODO item by ID.</p>
+                                <h5>Request Body:</h5>
+                                <pre>
+{
+    "title": "Updated TODO",
+    "completed": true
+}
+                </pre>
+                                <h5>Response:</h5>
+                                <pre>
+{
+    "id": 1,
+    "title": "Updated TODO",
+    "completed": true
+}
+                </pre>
+                        </div>
+                </div>
+
+                <div class="card mb-3">
+                        <div class="card-header">
+                                <h2>DELETE /api/todos/{id}</h2>
+                        </div>
+                        <div class="card-body">
+                                <p>Delete a specific TODO item by ID.</p>
+                                <h5>Response:</h5>
+                                <pre>
+{
+    "status": "success"
+}
+                </pre>
+                        </div>
+                </div>
+
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

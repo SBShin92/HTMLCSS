@@ -1,0 +1,26 @@
+/* 태블릿 - 768px 이상 */
+header {
+  height: 400px;
+}
+
+#intro,
+#section1 {
+  float: left;
+  width: 43%;
+  /*height: 400px; */
+  margin: 0;
+}
+
+#section2 {
+  clear: left;
+}
+
+.photo {
+  display: block;
+}
+
+.content img {
+  width: 50%;
+  float: left;
+  margin: 10px;
+}
